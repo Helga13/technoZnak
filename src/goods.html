@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+	<title>Goods</title>
+//= includes/head.html
+
+<body>
+//= includes/header.html
+    <div class="wrap">
+      <div class="row">
+        <div class="col sidebar">
+          //= includes/sidebar.html
+        </div>
+        <div class="col main_content">
+          <main>
+            <ul class="breadcrumbs">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Каталог запчастей</a></li>
+              <li class="last">Запчасти для автомобилей УАЗ, ВАЗ</li>
+            </ul>
+            <section class="section">
+              <div class="title"><span>Товары</span></div>
+              <div class="filters_block">
+                <select class="js-select sort">
+                  <option value="">Сортировка по умолчанию</option>
+                  <option value="">A-Z</option>
+                  <option value="">Z-A</option>
+                </select>
+                <div class="price">
+                  <span class="caption_price">Цена</span>
+                  <div class="field">
+                   <label for="from">от</label>
+                   <input id="from" type="text" value="14">
+                  </div>
+                  <div class="field">
+                   <label for="to">до</label>
+                   <input id="to" type="text" value="245">
+                  </div>
+                </div>
+                <div class="quantity_block">
+                  <span class="caption_quantity">Количество на странице</span>
+                  <select class="js-select quantity">
+                    <option value="">10</option>
+                    <option value="">25</option>
+                    <option value="">50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="goods_table header_on">
+                <div class="table_header">
+                  <div class="tr photo">Фото</div>
+                  <div class="tr name">Наименование</div>
+                  <div class="tr stock">На складе</div>
+                  <div class="tr vendor_code">Артикул</div>
+                  <div class="tr price">Цена</div>
+                  <div class="tr basket">Ваша корзина</div>
+                </div>
+                <div class="item_prod">
+                  <div class="sticker"><img src="img/icons/star.png" alt=""></div>
+                  <div class="tr photo"><div class="img_block"></div></div>
+                  <div class="tr name"><a href="#"><span>Название запчасти для грузовика</span></a></div>
+                  <div class="tr quantity">125 шт.</div>
+                  <div class="tr vendor_code">5647-5AB-90</div>
+                  <div class="tr price">196.99&nbsp;BYN</div>
+                  <div class="tr data">
+                    <div class="number js-number" data-max-number="100">
+                      <button class="number__minus js-minus-number" type="button"><span>-</span></button>
+                      <input type="text" class="input" value="1">
+                      <button class="number__plus js-plus-number" type="button"><span>+</span></button>
+                    </div>
+                    <button class="btn add_to_card" type="button" data-tooltip="Добавить в корзину"><img src="img/icons/bascket-hover.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="item_prod">
+                  <div class="tr photo"><div class="img_block"><a href="img/products/img1.jpg"><img src="img/products/img1.jpg" alt=""></a></div></div>
+                  <div class="tr name"><a href="#"><span>Название запчасти для грузовика</span></a></div>
+                  <div class="tr quantity red">9 шт.</div>
+                  <div class="tr vendor_code">5647-5AB-90</div>
+                  <div class="tr price discount">196.99&nbsp;BYN <span class="old_price">250.90&nbsp;BYN</span></div>
+                  <div class="tr data">
+                    <div class="number js-number" data-max-number="100">
+                      <button class="number__minus js-minus-number" type="button"><span>-</span></button>
+                      <input type="text" class="input" value="1">
+                      <button class="number__plus js-plus-number" type="button"><span>+</span></button>
+                    </div>
+                    <button class="btn add_to_card" type="button" data-tooltip="Добавить в корзину"><img src="img/icons/bascket-hover.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="item_prod">
+                  <div class="sticker"><img src="img/icons/star.png" alt=""></div>
+                  <div class="tr photo"><div class="img_block"></div></div>
+                  <div class="tr name"><a href="#"><span>Название запчасти для грузовика запчасти для грузовика запчасти для </span></a></div>
+                  <div class="tr quantity">125 шт.</div>
+                  <div class="tr vendor_code">5647-5AB-90</div>
+                  <div class="tr price">196.99&nbsp;BYN</div>
+                  <div class="tr data">
+                    <div class="number js-number" data-max-number="100">
+                      <button class="number__minus js-minus-number" type="button"><span>-</span></button>
+                      <input type="text" class="input" value="1">
+                      <button class="number__plus js-plus-number" type="button"><span>+</span></button>
+                    </div>
+                    <button class="btn add_to_card" type="button" data-tooltip="Добавить в корзину"><img src="img/icons/bascket-hover.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="item_prod">
+                  <div class="sticker"><img src="img/icons/star.png" alt=""></div>
+                  <div class="tr photo"><div class="img_block"></div></div>
+                  <div class="tr name"><a href="#"><span>Название запчасти для грузовика</span></a></div>
+                  <div class="tr quantity">125 шт.</div>
+                  <div class="tr vendor_code">5647-5AB-90</div>
+                  <div class="tr price">196.99&nbsp;BYN</div>
+                  <div class="tr data">
+                    <div class="number js-number" data-max-number="100">
+                      <button class="number__minus js-minus-number" type="button"><span>-</span></button>
+                      <input type="text" class="input" value="1">
+                      <button class="number__plus js-plus-number" type="button"><span>+</span></button>
+                    </div>
+                    <button class="btn add_to_card" type="button" data-tooltip="Добавить в корзину"><img src="img/icons/bascket-hover.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="item_prod">
+                  <div class="tr photo"><div class="img_block"><a href="img/products/img1.jpg"><img src="img/products/img1.jpg" alt=""></a></div></div>
+                  <div class="tr name"><a href="#"><span>Название запчасти для грузовика</span></a></div>
+                  <div class="tr quantity red">9 шт.</div>
+                  <div class="tr vendor_code">5647-5AB-90</div>
+                  <div class="tr price discount">196.99&nbsp;BYN <span class="old_price">250.90&nbsp;BYN</span></div>
+                  <div class="tr data">
+                    <div class="number js-number" data-max-number="100">
+                      <button class="number__minus js-minus-number" type="button"><span>-</span></button>
+                      <input type="text" class="input" value="1">
+                      <button class="number__plus js-plus-number" type="button"><span>+</span></button>
+                    </div>
+                    <button class="btn add_to_card" type="button" data-tooltip="Добавить в корзину"><img src="img/icons/bascket-hover.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="item_prod">
+                  <div class="tr photo"><div class="img_block"><a href="img/products/img1.jpg"><img src="img/products/img1.jpg" alt=""></a></div></div>
+                  <div class="tr name"><a href="#"><span>Название запчасти для грузовика</span></a></div>
+                  <div class="tr quantity red">9 шт.</div>
+                  <div class="tr vendor_code">5647-5AB-90</div>
+                  <div class="tr price discount">196.99&nbsp;BYN <span class="old_price">250.90&nbsp;BYN</span></div>
+                  <div class="tr data">
+                    <div class="number js-number" data-max-number="100">
+                      <button class="number__minus js-minus-number" type="button"><span>-</span></button>
+                      <input type="text" class="input" value="1">
+                      <button class="number__plus js-plus-number" type="button"><span>+</span></button>
+                    </div>
+                    <button class="btn add_to_card" type="button" data-tooltip="Добавить в корзину"><img src="img/icons/bascket-hover.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="item_prod">
+                  <div class="tr photo"><div class="img_block"><a href="img/products/img1.jpg"><img src="img/products/img1.jpg" alt=""></a></div></div>
+                  <div class="tr name"><a href="#"><span>Название запчасти для грузовика</span></a></div>
+                  <div class="tr quantity red">9 шт.</div>
+                  <div class="tr vendor_code">5647-5AB-90</div>
+                  <div class="tr price discount">196.99&nbsp;BYN <span class="old_price">250.90&nbsp;BYN</span></div>
+                  <div class="tr data">
+                    <div class="number js-number" data-max-number="100">
+                      <button class="number__minus js-minus-number" type="button"><span>-</span></button>
+                      <input type="text" class="input" value="1">
+                      <button class="number__plus js-plus-number" type="button"><span>+</span></button>
+                    </div>
+                    <button class="btn add_to_card" type="button" data-tooltip="Добавить в корзину"><img src="img/icons/bascket-hover.png" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+                <ul>
+                  <li><a href="#"><span>Назад</span></a></li>
+                  <li><a href="#"><span>1</span></a></li>
+                  <li><a href="#"><span>2</span></a></li>
+                  <li class="active"><a href="#"><span>3</span></a></li>
+                  <li><a href="#"><span>4</span></a></li>
+                  <li><a href="#"><span>5</span></a></li>
+                  <li>...</li>
+                  <li><a href="#"><span>125</span></a></li>
+                  <li><a href="#"><span>Вперед</span></a></li>
+                </ul>
+              </div>
+            </section>
+            <section class="section">
+              <div class="title"><span>SEO-текст</span></div>
+              <div class="text_block">
+                <div class="subtitle">Подзаголовок первый</div>
+                <p>У каждого из нас свой жизненный путь, но он, так или иначе, пересекался с историей развития Волжского автомобильного завода. Убедитесь в этом сами! Авторизуйтесь через одну из социальных сетей и узнайте, как события вашей жизни пересекались с историческими вехами АВТОВАЗа. Это интересно… </p>
+                <p>Авторизуйтесь черезУ каждого из нас свой жизненный путь, но он, так или иначе, пересекался с историей развития Волжского автомобильного завода. Убедитесь в этом сами!  одну из социальных сетей и узнайте, как события вашей жизни пересекались с историческими вехами АВТОВАЗа. Убедитесь в этом сами!</p>
+              </div>
+              <div class="text_block">
+                <div class="subtitle">Второй подзаголовок</div>
+                <p>Другой текст. У каждого из нас свой жизненный путь, но он, так или иначе, пересекался с историей развития Волжского автомобильного завода. Убедитесь в этом сами! Авторизуйтесь через одну из социальных сетей и узнайте, как события вашей жизни.</p>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+//= includes/footer.html
+//= includes/scripts.html
+</body>
+</html>

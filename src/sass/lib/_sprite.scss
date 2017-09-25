@@ -1,0 +1,249 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$arr-name: 'arr'
+$arr-x: 64px
+$arr-y: 128px
+$arr-offset-x: -64px
+$arr-offset-y: -128px
+$arr-width: 12px
+$arr-height: 8px
+$arr-total-width: 159px
+$arr-total-height: 144px
+$arr-image: 'sprite.png'
+$arr: 64px 128px -64px -128px 12px 8px 159px 144px 'sprite.png' 'arr'
+$bascket-hover-name: 'bascket-hover'
+$bascket-hover-x: 128px
+$bascket-hover-y: 106px
+$bascket-hover-offset-x: -128px
+$bascket-hover-offset-y: -106px
+$bascket-hover-width: 20px
+$bascket-hover-height: 17px
+$bascket-hover-total-width: 159px
+$bascket-hover-total-height: 144px
+$bascket-hover-image: 'sprite.png'
+$bascket-hover: 128px 106px -128px -106px 20px 17px 159px 144px 'sprite.png' 'bascket-hover'
+$bascket-name: 'bascket'
+$bascket-x: 128px
+$bascket-y: 89px
+$bascket-offset-x: -128px
+$bascket-offset-y: -89px
+$bascket-width: 20px
+$bascket-height: 17px
+$bascket-total-width: 159px
+$bascket-total-height: 144px
+$bascket-image: 'sprite.png'
+$bascket: 128px 89px -128px -89px 20px 17px 159px 144px 'sprite.png' 'bascket'
+$home-active-name: 'home-active'
+$home-active-x: 128px
+$home-active-y: 0px
+$home-active-offset-x: -128px
+$home-active-offset-y: 0px
+$home-active-width: 24px
+$home-active-height: 24px
+$home-active-total-width: 159px
+$home-active-total-height: 144px
+$home-active-image: 'sprite.png'
+$home-active: 128px 0px -128px 0px 24px 24px 159px 144px 'sprite.png' 'home-active'
+$home-name: 'home'
+$home-x: 128px
+$home-y: 24px
+$home-offset-x: -128px
+$home-offset-y: -24px
+$home-width: 24px
+$home-height: 24px
+$home-total-width: 159px
+$home-total-height: 144px
+$home-image: 'sprite.png'
+$home: 128px 24px -128px -24px 24px 24px 159px 144px 'sprite.png' 'home'
+$hurt-name: 'hurt'
+$hurt-x: 128px
+$hurt-y: 48px
+$hurt-offset-x: -128px
+$hurt-offset-y: -48px
+$hurt-width: 24px
+$hurt-height: 22px
+$hurt-total-width: 159px
+$hurt-total-height: 144px
+$hurt-image: 'sprite.png'
+$hurt: 128px 48px -128px -48px 24px 22px 159px 144px 'sprite.png' 'hurt'
+$more-hover-name: 'more-hover'
+$more-hover-x: 85px
+$more-hover-y: 128px
+$more-hover-offset-x: -85px
+$more-hover-offset-y: -128px
+$more-hover-width: 9px
+$more-hover-height: 8px
+$more-hover-total-width: 159px
+$more-hover-total-height: 144px
+$more-hover-image: 'sprite.png'
+$more-hover: 85px 128px -85px -128px 9px 8px 159px 144px 'sprite.png' 'more-hover'
+$more-name: 'more'
+$more-x: 76px
+$more-y: 128px
+$more-offset-x: -76px
+$more-offset-y: -128px
+$more-width: 9px
+$more-height: 8px
+$more-total-width: 159px
+$more-total-height: 144px
+$more-image: 'sprite.png'
+$more: 76px 128px -76px -128px 9px 8px 159px 144px 'sprite.png' 'more'
+$mts-active-name: 'mts-active'
+$mts-active-x: 0px
+$mts-active-y: 128px
+$mts-active-offset-x: 0px
+$mts-active-offset-y: -128px
+$mts-active-width: 16px
+$mts-active-height: 16px
+$mts-active-total-width: 159px
+$mts-active-total-height: 144px
+$mts-active-image: 'sprite.png'
+$mts-active: 0px 128px 0px -128px 16px 16px 159px 144px 'sprite.png' 'mts-active'
+$mts-name: 'mts'
+$mts-x: 32px
+$mts-y: 128px
+$mts-offset-x: -32px
+$mts-offset-y: -128px
+$mts-width: 16px
+$mts-height: 16px
+$mts-total-width: 159px
+$mts-total-height: 144px
+$mts-image: 'sprite.png'
+$mts: 32px 128px -32px -128px 16px 16px 159px 144px 'sprite.png' 'mts'
+$person-hover-name: 'person-hover'
+$person-hover-x: 152px
+$person-hover-y: 20px
+$person-hover-offset-x: -152px
+$person-hover-offset-y: -20px
+$person-hover-width: 7px
+$person-hover-height: 20px
+$person-hover-total-width: 159px
+$person-hover-total-height: 144px
+$person-hover-image: 'sprite.png'
+$person-hover: 152px 20px -152px -20px 7px 20px 159px 144px 'sprite.png' 'person-hover'
+$person-name: 'person'
+$person-x: 152px
+$person-y: 0px
+$person-offset-x: -152px
+$person-offset-y: 0px
+$person-width: 7px
+$person-height: 20px
+$person-total-width: 159px
+$person-total-height: 144px
+$person-image: 'sprite.png'
+$person: 152px 0px -152px 0px 7px 20px 159px 144px 'sprite.png' 'person'
+$photo-name: 'photo'
+$photo-x: 0px
+$photo-y: 0px
+$photo-offset-x: 0px
+$photo-offset-y: 0px
+$photo-width: 128px
+$photo-height: 128px
+$photo-total-width: 159px
+$photo-total-height: 144px
+$photo-image: 'sprite.png'
+$photo: 0px 0px 0px 0px 128px 128px 159px 144px 'sprite.png' 'photo'
+$star-name: 'star'
+$star-x: 128px
+$star-y: 70px
+$star-offset-x: -128px
+$star-offset-y: -70px
+$star-width: 20px
+$star-height: 19px
+$star-total-width: 159px
+$star-total-height: 144px
+$star-image: 'sprite.png'
+$star: 128px 70px -128px -70px 20px 19px 159px 144px 'sprite.png' 'star'
+$velcom-active-name: 'velcom-active'
+$velcom-active-x: 16px
+$velcom-active-y: 128px
+$velcom-active-offset-x: -16px
+$velcom-active-offset-y: -128px
+$velcom-active-width: 16px
+$velcom-active-height: 16px
+$velcom-active-total-width: 159px
+$velcom-active-total-height: 144px
+$velcom-active-image: 'sprite.png'
+$velcom-active: 16px 128px -16px -128px 16px 16px 159px 144px 'sprite.png' 'velcom-active'
+$velcom-name: 'velcom'
+$velcom-x: 48px
+$velcom-y: 128px
+$velcom-offset-x: -48px
+$velcom-offset-y: -128px
+$velcom-width: 16px
+$velcom-height: 16px
+$velcom-total-width: 159px
+$velcom-total-height: 144px
+$velcom-image: 'sprite.png'
+$velcom: 48px 128px -48px -128px 16px 16px 159px 144px 'sprite.png' 'velcom'
+$spritesheet-width: 159px
+$spritesheet-height: 144px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: $arr $bascket-hover $bascket $home-active $home $hurt $more-hover $more $mts-active $mts $person-hover $person $photo $star $velcom-active $velcom
+$spritesheet: 159px 144px 'sprite.png' $spritesheet-sprites
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+@mixin spriter-width($sprite)
+  width: nth($sprite, 5)/2
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+@mixin spriter-height($sprite)
+  height: nth($sprite, 6)/2
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+@mixin spriter-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)/2
+  $sprite-offset-y: nth($sprite, 4)/2
+  background-position: $sprite-offset-x  $sprite-offset-y
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(../img/#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+@mixin spriter($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
+@mixin spritesr($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include spriter($sprite)

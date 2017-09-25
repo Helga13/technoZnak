@@ -1,0 +1,11 @@
+@include font-face('Exo2RegularCondensed', "../fonts/Exo2RegularCondensed" ,null, null, ttf eot woff svg);
+@include font-face('Exo2MediumCondensed', "../fonts/Exo2MediumCondensed" ,null, null, ttf eot woff svg);
+@include font-face('Exo2BoldCondensed', "../fonts/Exo2BoldCondensed" ,null, null, ttf eot woff svg);
+@include font-face('Exo2SemiBoldCondensed', "../fonts/Exo2SemiBoldCondensed" ,null, null, ttf eot woff svg);
+
+@mixin p_center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

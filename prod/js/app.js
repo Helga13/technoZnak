@@ -1,5 +1,6 @@
 $(document).ready(function () {
   'use strict'
+  
   // tabs
   $('.tabs_block').each(function () {
     $(this).find('.tab').each(function (i) {
@@ -27,6 +28,29 @@ $(document).ready(function () {
     , speed: 1000
     , slidesToShow: 4
     , slidesToScroll: 4
+    , responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 601,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
   });
   // equal height
   $('.novelties_slider').on('setPosition', function () {
@@ -44,6 +68,29 @@ $(document).ready(function () {
     , speed: 1000
     , slidesToShow: 7
     , slidesToScroll: 4
+    , responsive: [
+    {
+      breakpoint: 993,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5
+      }
+    },
+      {
+      breakpoint: 601,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    }
+  ]
   });
   
   // dropdown
@@ -114,8 +161,14 @@ $(document).ready(function () {
   
   // fancybox
   
-   $(".img_block > a").fancybox();
+   $('.img_block > a').fancybox();
   
-
+  // menu toggle
+  
+  $('.js-menuToggle').on('click', function(e){
+    e.preventDefault();
+    $(this).parent('.hamburger').next('.catalog').slideToggle(300);
+  });
+  
   
 })

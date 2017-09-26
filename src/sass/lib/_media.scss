@@ -1,29 +1,241 @@
 @media only screen and (max-width : 1600px) {
-
+  .header_on .add_to_card:after{
+    right: 15px;
+    top: 30px;
+  }
+  .add_block .favorites:after{
+    right: 15px;
+    top: 55px;
+  }
 }
 
-
-@media only screen and (max-width : 1366px) {
-
-}
-
-@media only screen and (max-width : 1279px) {
-
+@media only screen and (max-width : 1200px) {
+  .header_top .phones{
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+  }
+  .header_bottom .logo .text{
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .footer_top li{
+    margin: 0 30px 0 0;
+  }
 }
 
 @media only screen and (max-width : 1023px) {
-
+  .header_bottom .logo .text{
+    display: none;
+  }
+  .header_bottom .logo{
+    width: 140px;
+  }
+  .header_bottom .search_block{
+    width: calc(100% - 140px);
+  }
+  .sidebar,
+  .main_content{
+    width: 100%;
+  }
+  .sidebar{
+    .hamburger{
+      display: block;
+    }
+    .catalog{
+      display: none;
+    }
+  }
+  footer .footer_row{
+    width: 100%;
+    float: none;
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width : 992px) {
+  .manufacturers .partner_item{
+    width: 16.666%;
+  }
+}
 
+@media only screen and (max-width : 864px) {
+  .nav_right .basket .nav_link .card{
+    display: none;
+  }
+  .nav_right .personal .nav_link{
+    font-size: 0;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+  }
+  .manufacturers .partner_item{
+    width: 20%;
+  }
+  .novelties .item_prod{
+    width: 33.333%;
+  }
+  
 }
 
 @media only screen and (max-width : 767px) {
+  .footer_top .footer_row{
+    text-align: center;
+    .logo{
+      margin: 0 25px 8px 25px;
+    }
+    li{
+      margin: 0 10px;
+    }
+  }
+  .nav_right .basket, .nav_right .personal{
+    margin-left: 10px;
+  }
+  .main_nav li{
+    margin-right: 20px;
+  }
+  .header_bottom .search_block .btn{
+    margin: 6px;
+    margin-bottom: 0;
+  }
+  .header_bottom .logo{
+    width: 110px;
+    img{
+      display: none;
+    }
+    .logo_media{
+      display: block;
+      width: 80px;
+    }
+  }
+  .header_bottom .search_block {
+    width: calc(100% - 110px);
+  }
+  .section {
+    margin: 42px 0;
+  }
+  .characteristic, 
+  .details{
+    width: 100%;
+  }
+  .characteristic_table,
+  .details_table{
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .header_on .tr.quantity, 
+  .header_on .tr.stock{
+    display: none;
+  }
+  .header_on .price{
+    width: 90px;
+  }
+  .header_on .name{
+    width: calc(100% - 416px); /* 564-89-59=416 */
+  }
+  .manufacturers .partner_item {
+    width: 33.333%;
+  }
+  .novelties .item_prod{
+    width: 50%;
+  }
+  .goods_table {
+    .name{
+      width: calc(100% - 64px);
+    }
+    .data,
+    .price{
+      margin-top: 10px;
+    }
+    .price{
+      width: calc(100% - 155px);
+      text-align: right;
+    }
+  }
 
 }
 
+@media only screen and (max-width : 600px) {
+  .main_nav{
+    width: 100%;
+  }
+  .nav_right{
+    float: none;
+    text-align: right;
+    margin-top: 8px;
+  }
+  .header_top .phones{
+    margin: 0 auto;
+  }
+  .title{
+    padding-bottom: 20px;
+  }
+  .section {
+    margin: 22px 0;
+  }
+  .goods_table .table_header{
+    display: none;
+  }
+  .header_on .item_prod{
+    padding: 8px 0;
+  }
+  .header_on .vendor_code{
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 0;
+    &:before{
+      content: attr(data-caption);
+    }
+  }
+  .add_info .tabs_content .img_item{
+    width: 50%;
+  }
+  .filters_block .price{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .hamburger .text{
+    font-size: 24px;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
 @media only screen and (max-width : 480px) {
+  .filters_block .price{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .header_bottom .search_block {
+    input,
+    .select2-container{
+      width: 100%!important;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .hamburger .text{
+    font-size: 20px;
+  }
+  .novelties .item_prod{
+    width: 100%;
+  }
+  .add_block .favorites{
+    margin-right: 0;
+  }
+  .add_block .big_btn{
+    width: 196px;
+  }
+  .product_card .title span{
+    display: inline-block;
+  }
+  .header_top .phones{
+    font-size: 24px;
+    width: 264px;
+    .tabs_caption{
+      top: 6px;
+    }
+  }
 
 }
 

@@ -174,6 +174,10 @@ p {
   }
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 
 /* header */
 
@@ -309,11 +313,14 @@ header{
     position: absolute;
     background-color: #fff;
     top: 39px;
-    left: 0;
+//    left: 0;
+    right: 0;
+    min-width: 170px;
     z-index: 1;
     display: none;
     width: 100%;
     border: 1px solid #a4bdf6;
+    text-align: left;
     li:last-child .link{
       border-bottom: none;
     }
@@ -443,6 +450,9 @@ header{
 
 .sidebar{
   width: 30%;
+  &.col{
+    padding-bottom: 16px;
+  }
 }
 
 .catalog{
@@ -493,6 +503,34 @@ header{
       &:after{
         opacity: 1;
       }
+    }
+  }
+}
+
+.hamburger{
+  text-align: center;
+  display: none;
+  .text{
+    text-transform: uppercase;
+    color: #29437f;
+    font-family: Exo2BoldCondensed,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 29px;
+    line-height: 35px;
+    letter-spacing: .01em;
+    overflow: hidden;
+    margin: 0 35px;
+  }
+  .btn_memu{
+    display: inline-block;
+    width: 35px;
+    padding: 5px;
+    float: right;
+    span{
+      display: inline-block;
+      height: 4px;
+      width: 25px;
+      background-color: #29437f;
+      margin: 2px 0;
     }
   }
 }
@@ -552,13 +590,14 @@ footer{
 
 .breadcrumbs{
   font-size: 0;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   li{
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.01em;
     display: inline-block;
     padding-right: 36px;
+    padding-bottom: 6px;
     position: relative;
     &:after{
       content: '';
@@ -634,6 +673,7 @@ main{
   .slider_item{
     height: 300px;
     position: relative;
+    
     .slogan{
       position: absolute;
       top: 0;
@@ -660,6 +700,12 @@ main{
       line-height: normal;
       letter-spacing: 0.025em;
       margin: 18px 0;
+    }
+    img{
+      @include p_center;
+      min-height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -910,6 +956,7 @@ main{
   }
   .name{
     text-align: left;
+    width: 100%;
   }
   .price_from{
     text-align: left;
@@ -988,16 +1035,21 @@ main{
 /* filters_block */
 
 .filters_block{
-  padding: 7px 0 29px;
+  padding: 0 0 29px;
+  @include clearfix;
   .sort,
   .price,
   .quantity_block,
   .field{
     display: inline-block;
     vertical-align: middle;
+    margin-top: 7px;
   }
   .select2-container{
     top: 0;
+  }
+  .sort + .select2-container{
+    margin-top: 7px;
   }
   .price,
   .caption_quantity{
@@ -1005,7 +1057,8 @@ main{
     line-height: 29px;
   }
   .price{
-    margin: 0 35px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
   .field{
     position: relative;
